@@ -1,0 +1,118 @@
+.wrapper {
+    cursor: default;
+    padding: 0 0.5em 0.5em 0.5em;
+    overflow-y: scroll;
+    pointer-events: all;
+    height: 300px;
+}
+.title {
+    margin: 0;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin-bottom: 1em;
+}
+.button {
+    display: grid;
+}
+input[type='radio'] {
+    justify-self: center;
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    margin: 0;
+    margin-top: 0.5em;
+    font: inherit;
+    width: 1em;
+    height: 1em;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+}
+.input_wrapper {
+    position: relative;
+}
+label {
+    pointer-events: none;
+}
+input[type='radio']:hover,
+input[type='radio']:active {
+    pointer-events: all;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+input[type='radio']:checked {
+    pointer-events: none;
+}
+.cross::after {
+    content: none;
+    position: absolute;
+    bottom: 0.5em;
+    left: 50%;
+    display: block;
+    background-color: black;
+    height: 1.5px;
+    width: 20px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.cross::before {
+    content: none;
+    position: absolute;
+    bottom: 0.5em;
+    left: 50%;
+    display: block;
+    background-color: black;
+    height: 1.5px;
+    width: 20px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+input[type='radio']:checked + .cross::before,
+input[type='radio']:checked + .cross::after {
+    content: '';
+}
+
+.btn_name {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+.link_description {
+    font-size: 0.7em;
+    font-style: italic;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.link_span {
+    display: inline-block;
+    transform: scale(1);
+    transition: scale 250ms linear;
+}
+.link_span:hover,
+.link_span:focus {
+    transform: scale(1.1);
+}

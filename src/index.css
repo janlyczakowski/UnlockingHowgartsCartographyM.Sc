@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'PrivateDrive';
+    src: local('PrivateDrive'),
+        url('./resources/fonts/PrivateDrive/private_drive.otf') format('truetype');
+    font-weight: regular;
+}
+
+body {
+    font-family: 'PrivateDrive';
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('./resources/textures/Paper 8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

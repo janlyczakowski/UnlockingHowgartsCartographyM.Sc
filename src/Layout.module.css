@@ -1,0 +1,19 @@
+.app_layout {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navigation_box {
+    width: 250px;
+    opacity: 1;
+}
+.navigation_box_inactive {
+    width: 250px;
+    opacity: 0;
+}
+
+.content_box {
+    width: calc(100vw - 250px);
+    position: relative;
+}

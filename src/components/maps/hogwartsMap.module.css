@@ -1,0 +1,31 @@
+.content_wrapper {
+    position: relative;
+}
+.content_wrapper,
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: end;
+}
+
+.text:hover {
+    fill: white;
+    cursor: pointer;
+    filter: drop-shadow(-7px 7px 1px rgb(0 0 0 / 1));
+}
+.loading_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25em;
+}
+.hogwarts_text {
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 1px;
+}
+.hogwarts_vector_text {
+    transform: translate(-5px, 17px);
+}

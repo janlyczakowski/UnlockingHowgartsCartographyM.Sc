@@ -1,0 +1,14 @@
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.loading_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    width: 200px;
+    text-align: center;
+}

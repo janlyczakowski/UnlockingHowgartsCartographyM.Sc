@@ -1,0 +1,213 @@
+.svg {
+    width: 100%;
+    height: 100vh;
+}
+.st0 {
+    fill: none;
+}
+.st1 {
+    opacity: 0.1;
+    fill: transparent;
+}
+
+.st2 {
+    opacity: 1;
+    fill: 'none';
+    stroke: #00000077;
+    stroke-width: 9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.st14 {
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 1.225;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.st15 {
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 8.4, 15.4, 5.6, 9.1, 15.4, 2.8;
+}
+.st16 {
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 0.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+.st17 {
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 0.525;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+.st18 {
+    opacity: 0.6626;
+}
+.st19 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+.st20 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.elevator,
+.ramp {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.42, 0, 1, 1);
+}
+.accessible_tables {
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.42, 0, 1, 1);
+}
+.inaccessible_tables {
+    opacity: 1;
+    transition: opacity 0.5s cubic-bezier(0.42, 0, 1, 1);
+}
+.great_hall {
+    fill: none;
+    stroke: #000000;
+    /* stroke: #a8895d; */
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    animation: blinkScale 1s linear 4;
+}
+@keyframes blinkScale {
+    0% {
+        stroke-width: 3;
+    }
+    25% {
+        stroke-width: 4;
+    }
+    50% {
+        stroke-width: 5;
+    }
+    75% {
+        stroke-width: 6;
+    }
+    100% {
+        stroke-width: 7;
+    }
+}
+.st21 {
+    opacity: 0.15;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #cbcbcb;
+    stroke: #666666;
+    stroke-miterlimit: 10;
+}
+.st22 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 0.3;
+    stroke-miterlimit: 10;
+}
+.st23 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.st24 {
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+.stairs {
+    opacity: 1;
+    transition: opacity 0.5s cubic-bezier(0.42, 0, 1, 1);
+}
+
+.st25 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+.st26 {
+    fill: none;
+    stroke: #000000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.st27 {
+    stroke: #000000;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.st28 {
+    opacity: 0;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
+.st29 {
+    fill: #4e4e4e;
+    font-size: 28px;
+}
+.st30 {
+    fill: #4e4e4e;
+    font-size: 26px;
+}
+.st31 {
+    fill: #4e4e4e;
+    font-size: 26px;
+    letter-spacing: -1px;
+}
+.st32 {
+    display: none;
+}
+.label {
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.42, 0, 1, 1);
+    transition-delay: 1s;
+}
+/* .main_label {
+    transform: scale(1);
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.42, 0, 1, 1);
+    transition: transform 0.5s cubic-bezier(0.42, 0, 1, 1) opacity 0.5s cubic-bezier(0.42, 0, 1, 1);
+    transition-delay: 1s;
+}
+.main_label_active {
+    transform: scale(1.15);
+    opacity: 1;
+} */
+.label_active {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+.inactive {
+    opacity: 0;
+}
