@@ -135,6 +135,7 @@
     opacity: 0.7;
     animation: blinkingDown 2s infinite;
 }
+
 @keyframes blinkingDown {
     0% {
         opacity: 0;
